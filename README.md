@@ -1,8 +1,9 @@
 ## Running the Code
 - Create a virtual environment
 ```
-virtualenv pevenv --python=python3.7
-. pevenv/bin/activate
+sudo apt-get install python3-venv
+python3 -m venv myvenv
+source myvenv/bin/activate
 ```
 - Install required packages
 ```
