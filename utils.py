@@ -11,6 +11,11 @@ from collections import defaultdict
 from typing import Sequence
 from metrics import ECE, Reliability
 
+"""
+Code adopted from 
+Hsu et al., "What Makes Graph Neural Networks Miscalibrated?" (NeurIPS'22)
+"""
+
 def set_global_seeds(seed):
     """
     Set global seed for reproducibility

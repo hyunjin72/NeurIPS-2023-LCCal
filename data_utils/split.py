@@ -7,6 +7,10 @@ import numpy as np
 
 from torch_geometric.io.planetoid import index_to_mask
 
+"""
+Code adopted from 
+Hsu et al., "What Makes Graph Neural Networks Miscalibrated?" (NeurIPS'22)
+"""
 
 def get_idx_split(
         dataset: Dataset,

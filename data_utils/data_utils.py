@@ -13,6 +13,11 @@ from data_utils.split import get_idx_split
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+"""
+Code adopted from 
+Hsu et al., "What Makes Graph Neural Networks Miscalibrated?" (NeurIPS'22)
+"""
+
 # Run at console -> python -c 'from src.data.data_utils import *; split_data("Cora", 5, 3, 85)'
 def split_data(
         name: str, 

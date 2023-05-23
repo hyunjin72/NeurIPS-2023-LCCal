@@ -7,6 +7,10 @@ from torch import nn, Tensor, LongTensor, BoolTensor
 from KDEpy import FFTKDE
 import pdb
 
+"""
+Code adopted from 
+Hsu et al., "What Makes Graph Neural Networks Miscalibrated?" (NeurIPS'22)
+"""
 
 # ref: https://stackoverflow.com/a/71801795
 # do partial sums along dim 0 of tensor t

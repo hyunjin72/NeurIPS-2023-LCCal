@@ -3,6 +3,11 @@ import torch.nn.functional as F
 from torch.nn import Linear, Dropout
 from torch_geometric.nn import GCNConv, GATConv
 
+"""
+Code adopted from 
+Hsu et al., "What Makes Graph Neural Networks Miscalibrated?" (NeurIPS'22)
+"""
+
 def create_model(dataset, args):
     """
     Create model with hyperparameters
